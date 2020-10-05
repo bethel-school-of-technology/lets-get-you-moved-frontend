@@ -1,0 +1,33 @@
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+table.cart {
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+table.cart td,
+table.cart th {
+  border: 1px solid #8f8f8f;
+}
+
+.btn-purchase {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.2rem;
+  background: #5151bb;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-purchase:hover {
+ opacity: 0.8;
+ transition: all 0.4s ease-in-out;
+}

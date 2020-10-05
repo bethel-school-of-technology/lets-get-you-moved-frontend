@@ -1,0 +1,3310 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400");
+@import url("//db.onlinewebfonts.com/c/07e4f97163ee64e2286786298ed14ea7?family=Anodyne");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-title h1 {
+  display: inline-block;
+  font-size: 45px;
+  font-family: oswald;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.section-title h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: #febd01;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* Header */
+
+header {
+  background-color: white;
+  height: 80px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  /* border-bottom: 1px solid black; */
+   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 0px 15px;
+  z-index: 11;
+}
+
+header.fixed {
+  background-color: #ffffff;
+  opacity: 0.9;
+  position: fixed;
+  border-bottom: 1px solid gray;
+  animation: fixHeader 0.5s ease;
+  z-index: 11;
+  height: 80px;
+}
+
+@keyframes fixHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-0%);
+  }
+}
+
+.ham-burger .fa {
+  font-size: 30px;
+  height: 30px;
+  width: 35px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 3px;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 50px;
+}
+
+header .row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .brand-name a img {
+  width: 120px;
+  padding-top: 8px;
+  position: relative;
+}
+
+header.fixed .brand-name a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header.fixed .brand-name a::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header .navbar ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 72px;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  padding-bottom: 53px;
+}
+
+header .navbar ul li .orderNow {
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+header.fixed .navbar ul li a {
+  color: black;
+}
+
+header.fixed .navbar ul li .orderNow {
+  color: red;
+}
+
+header.fixed .navbar ul li .orderNow:hover {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+  color: red;
+  transition: all 0.3s ease;
+}
+
+header .navbar ul li .orderNow:hover {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Banner Section */
+
+.home {
+  min-height: 100vh;
+  /* background-image:  url("https://fullyloaded.pizza/wp-content/uploads/2016/08/pizza-background.jpg"); */
+  background-image: url("https://cdn.modpizza.com/wp-content/uploads/2020/03/MOD_Messaging_Website_v4.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.home .full-screen {
+  min-height: 100vh;
+}
+
+.home .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.home .home-content .block h1 {
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 6em;
+  font-weight: 100;
+  padding-top: 30px;
+}
+
+.home .home-content .block P {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.home .home-content .block .cv-btn {
+  padding-top: 23px;
+  text-align: center;
+}
+
+.home .home-content .block .cv-btn a {
+  border-radius: 50px;
+  color: white;
+  background-color: red;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+.home .home-content .block .cv-btn a:hover {
+  background-color: darkred;
+  color: white;
+  font-size: 25px;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+.about-me .cv-btn {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.about-me .cv-btn a {
+  border-radius: 50px;
+  color: white;
+  background-color: red;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+.about-me .container .cv-btn a:hover {
+  background-color: darkred;
+  color: white;
+  font-size: 20px;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+/* About Me */
+
+.about-me {
+  height: 30em;
+  padding: 80px 15px;
+  background: url("https://blog.hdwallsource.com/wp-content/uploads/2014/10/white-wallpaper-16876-17429-hd-wallpapers.jpg");
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me .section-title p.small {
+  display: block;
+  font-size: 14px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me .about-content {
+  color: red;
+  text-align: center;
+  font-size: 100px;
+}
+
+.about-me .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me .about-content .img img {
+  width: 100%;
+  display: block;
+}
+
+.about-me .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me .about-content .text h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  color: #000000;
+}
+
+.about-me .about-content .text h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.about-me .about-content .text h6 span {
+  color: #febd01;
+}
+
+.about-me .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0 0 12px;
+}
+
+.about-me .about-content .text .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-me .about-content .text .info .list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.about-me .about-content .text .info .list label {
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.pledge {
+  font-weight: 450;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.parallax-container {
+  width: 100%;
+  margin: 0;
+  background: #f9f9f9;
+  font-size: 24px;
+  position: relative;
+}
+
+.parallax {
+  background: url("http://restaurantnewsrelease.com/wp-content/uploads/2018/06/Mod-Pizza-Announces-Entry-into-Dallas-Market.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.parallax2 {
+  background: url("https://cdn.modpizza.com/wp-content/uploads/2020/08/20200629_SummerFlashMOD_Parallax_v2_salad.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.parallax3 {
+  background: url("https://www.lasvegasarchitects.org/wp-content/uploads/2017/12/RestaurantArchitects_1_LasVegas_-Five50-Pizza-Bar.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+/* Footer */
+
+footer {
+  padding: 50px 15px;
+  background-color: #0c0c17;
+}
+
+footer .logo {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+footer .info {
+  padding-top: 20px;
+  display: table;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 16px;
+}
+
+footer .social a {
+  color: #999999;
+  width: 40px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+footer .social a:hover {
+  color: #ffffff;
+  transform: scale(1.3);
+}
+
+/* State Example */
+.state {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Order Page */
+
+.nav {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid black;
+}
+
+.nav ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.nav ul li {
+  float: none;
+  display: inline-block;
+}
+
+.nav ul li:nth-child(1) {
+  float: left;
+}
+
+.nav ul li:nth-child(2) {
+  float: left;
+}
+
+.nav ul li a {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+.order {
+  width: 100%;
+  position: relative;
+}
+
+.logo_area {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -150px;
+  text-align: center;
+  background-color: yellow;
+}
+
+.logo_area img {
+  width: 9em;
+  padding-top: 10px;
+}
+
+.body_order {
+  background: url("");
+}
+
+/* About Us Page */
+
+.about_header {
+  background-color: gray;
+}
+
+/* Order Page */
+
+.home2 {
+  min-height: 100vh;
+  background-image: url("https://cdn9.dissolve.com/p/D2115_189_697/D2115_189_697_1200.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.home2 .full-screen {
+  min-height: 100vh;
+}
+
+.home2 .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home2 .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.home2 .home-content .block h1 {
+  /* font-family: brush script mt; */
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9em;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+/* Meet the Team Page */
+
+.about {
+  min-height: 100vh;
+  background-image: url("https://subwallpaper.com/Widescreen-Wallpapers/pizza-wallpaper-phone-For-Widescreen-Wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.about .full-screen {
+  min-height: 100vh;
+}
+
+.about .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.about .home-content .block h1 {
+  font-family: Anodyne;
+  text-transform: uppercase;
+  font-size: 9em;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+.about-me2 {
+  padding: 100px 45px;
+  background-color: #ffffff;
+}
+
+.section-title2 {
+  max-width: 100%;
+  /* flex: 0 0 100%; */
+  margin-left: 50%;
+  margin-right: -50%;
+  margin-bottom: 40px;
+  padding-top: 25px;
+}
+
+.section-title2 h1 {
+  display: inline-block;
+  font-family: oswald;
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.section-title2 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me2 .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  height: 24em;
+}
+
+.about-me2 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me2 .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me2 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-me3 {
+  background-color: lightgray;
+  height: 40em;
+}
+
+.about-me3 .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me3 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me3 .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me3 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 35px;
+}
+
+.about-me4 {
+  background-color: white;
+  height: 40em;
+}
+
+.about-me4 .section-title2 p.small {
+  display: block;
+  font-size: 14px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me4 .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me4 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me4 .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me4 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-me5 {
+  background-color: lightgray;
+  height: 40em;
+}
+
+.about-me5 .section-title2 p.small {
+  display: block;
+  font-size: 14px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me5 .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me5 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me5 .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me5 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Our Story Page */
+
+.story {
+  min-height: 100vh;
+  background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.story .container {
+  /* background: rgba(0, 0, 0, 0.5); */
+  width: 100%;
+}
+
+.story .full-screen {
+  min-height: 100vh;
+}
+
+.story .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.story .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 0px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.story .home-content .block h1 {
+  /* font-family: brush script mt; */
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12em;
+  letter-spacing: 6px;
+  font-weight: 100;
+  padding-top: 18px;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
+  text-shadow: 2px 1px black;
+}
+
+.about-me2 .about-content .imgBuilding {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me2 .about-content .imgBuilding img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+  height: 16em;
+}
+
+/* Location Page */
+
+.location {
+  min-height: 35em;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/_xrAvUdF9XuPHMrhziq3kjXFuXI=/425x105:1891x1205/1200x675/filters:focal(425x105:1891x1205)/cdn.vox-cdn.com/uploads/chorus_image/image/48926127/2015-11-18-otium-012.0.0.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.location .full-screen {
+  min-height: 35em;
+}
+
+.location .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.location .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.location .home-content .block h1 {
+  /* font-family: brush script mt; */
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9em;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+.locations {
+  height: 60em;
+  padding: 80px 5px;
+  background-color: white;
+  margin-right: 35em;
+}
+
+.locations .section-title {
+  text-align: left;
+  padding-left: 9.6em;
+}
+
+.locations .about-content {
+  padding-left: 20%;
+}
+
+/* Responsive  */
+
+@media (max-width: 991px) {
+  .home .home-content .block h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .home-content .block h1 {
+    font-size: 40px;
+  }
+  .home .home-content .block h3 {
+    font-size: 25px;
+  }
+  header {
+    padding: 20px;
+    position: fixed;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .ham-burger .fa {
+    display: inline-block;
+    padding-right: 25px;
+    padding-top: 9px;
+  }
+
+  .brand-name .logo {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    padding: 15px;
+    border-top: 1px solid #eeeeee;
+    display: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .navbar.show {
+    display: block;
+  }
+  header .navbar ul li {
+    display: block;
+    margin-left: 0;
+  }
+  header .navbar ul li a {
+    line-height: 42px;
+    color: #000000;
+  }
+  header .navbar ul li a::before {
+    background-color: #febd01;
+  }
+  header .navbar a:not(:first-child),
+  .dropdown {
+    display: none;
+  }
+}
+
+.dropdown {
+  color: black;
+  background-color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  padding: 10px 15px;
+  /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.7); */
+  z-index: 1;
+  outline: none;
+}
+
+.dropdown-content .fixed {
+  opacity: 0.9;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 4em;
+}
+
+.dropTeam {
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+}
+
+.dropdown:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  color: black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fa  {
+padding-left: 4px;
+}
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400");
+@import url("//db.onlinewebfonts.com/c/07e4f97163ee64e2286786298ed14ea7?family=Anodyne");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-title h1 {
+  display: inline-block;
+  font-size: 45px;
+  font-family: oswald;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.section-title h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: #febd01;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* Header */
+
+header {
+  background-color: white;
+  height: 80px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  /* border-bottom: 1px solid black; */
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 0px 15px;
+  z-index: 11;
+}
+
+header.fixed {
+  background-color: #ffffff;
+  opacity: 0.9;
+  position: fixed;
+  border-bottom: 1px solid gray;
+  animation: fixHeader 0.5s ease;
+  z-index: 11;
+  height: 80px;
+}
+
+@keyframes fixHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-0%);
+  }
+}
+
+.ham-burger .fa {
+  font-size: 30px;
+  height: 30px;
+  width: 35px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 3px;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 50px;
+}
+
+header .row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .brand-name a img {
+  width: 120px;
+  padding-top: 8px;
+  position: relative;
+}
+
+header.fixed .brand-name a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header.fixed .brand-name a::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header .navbar ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 72px;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  padding-bottom: 53px;
+}
+
+header .navbar ul li .orderNow {
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+header.fixed .navbar ul li a {
+  color: black;
+}
+
+header.fixed .navbar ul li .orderNow {
+  color: red;
+}
+
+header.fixed .navbar ul li .orderNow:hover {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+  color: red;
+  transition: all 0.3s ease;
+}
+
+header .navbar ul li .orderNow:hover {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.dropdown {
+  color: black;
+  background-color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  padding: 10px 15px;
+  /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.7); */
+  z-index: 1;
+  outline: none;
+}
+
+.dropdown-content .fixed {
+  opacity: 0.9;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 4em;
+}
+
+.dropTeam {
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+}
+
+.dropdown:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  color: black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fa {
+  padding-left: 4px;
+}
+
+/* Banner Section */
+
+.home {
+  min-height: 100vh;
+  /* background-image:  url("https://fullyloaded.pizza/wp-content/uploads/2016/08/pizza-background.jpg"); */
+  background-image: url("https://cdn.modpizza.com/wp-content/uploads/2020/03/MOD_Messaging_Website_v4.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.home .full-screen {
+  min-height: 100vh;
+}
+
+.home .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.home .home-content .block h1 {
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 6em;
+  font-weight: 100;
+  padding-top: 30px;
+}
+
+.home .home-content .block P {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.home .home-content .block .cv-btn {
+  padding-top: 23px;
+  text-align: center;
+}
+
+.home .home-content .block .cv-btn a {
+  border-radius: 50px;
+  color: white;
+  background-color: red;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+.home .home-content .block .cv-btn a:hover {
+  background-color: darkred;
+  color: white;
+  font-size: 25px;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+.about-me .cv-btn {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.about-me .cv-btn a {
+  border-radius: 50px;
+  color: white;
+  background-color: red;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+.about-me .container .cv-btn a:hover {
+  background-color: darkred;
+  color: white;
+  font-size: 20px;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+/* About Me */
+
+.about-me {
+  height: 30em;
+  padding: 80px 15px;
+  background: url("https://blog.hdwallsource.com/wp-content/uploads/2014/10/white-wallpaper-16876-17429-hd-wallpapers.jpg");
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me .section-title p.small {
+  display: block;
+  font-size: 14px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me .about-content {
+  color: red;
+  text-align: center;
+  font-size: 100px;
+}
+
+.about-me .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me .about-content .img img {
+  width: 100%;
+  display: block;
+}
+
+.about-me .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me .about-content .text h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  color: #000000;
+}
+
+.about-me .about-content .text h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.about-me .about-content .text h6 span {
+  color: #febd01;
+}
+
+.about-me .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0 0 12px;
+}
+
+.about-me .about-content .text .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-me .about-content .text .info .list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.about-me .about-content .text .info .list label {
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.pledge {
+  font-weight: 450;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.parallax-container {
+  width: 100%;
+  margin: 0;
+  background: #f9f9f9;
+  font-size: 24px;
+  position: relative;
+}
+
+.parallax {
+  background: url("http://restaurantnewsrelease.com/wp-content/uploads/2018/06/Mod-Pizza-Announces-Entry-into-Dallas-Market.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.parallax2 {
+  background: url("https://cdn.modpizza.com/wp-content/uploads/2020/08/20200629_SummerFlashMOD_Parallax_v2_salad.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.parallax3 {
+  background: url("https://www.lasvegasarchitects.org/wp-content/uploads/2017/12/RestaurantArchitects_1_LasVegas_-Five50-Pizza-Bar.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+/* Footer */
+
+footer {
+  padding: 50px 15px;
+  background-color: #0c0c17;
+}
+
+footer .logo {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+footer .info {
+  padding-top: 20px;
+  display: table;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 16px;
+}
+
+footer .social a {
+  color: #999999;
+  width: 40px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+footer .social a:hover {
+  color: #ffffff;
+  transform: scale(1.3);
+}
+
+/* State Example */
+.state {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Order Page */
+
+
+
+/* About Us Page */
+
+.about_header {
+  background-color: gray;
+}
+
+/* Order Page */
+
+.home2 {
+  min-height: 100vh;
+  background-image: url("https://cdn9.dissolve.com/p/D2115_189_697/D2115_189_697_1200.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.home2 .full-screen {
+  min-height: 100vh;
+}
+
+.home2 .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home2 .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.home2 .home-content .block h1 {
+  /* font-family: brush script mt; */
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9em;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+/* Meet the Team Page */
+
+.about {
+  min-height: 100vh;
+  background-image: url("https://subwallpaper.com/Widescreen-Wallpapers/pizza-wallpaper-phone-For-Widescreen-Wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.about .full-screen {
+  min-height: 100vh;
+}
+
+.about .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.about .home-content .block h1 {
+  font-family: Anodyne;
+  text-transform: uppercase;
+  font-size: 9em;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+.about-me2 {
+  padding: 100px 45px;
+  background-color: #ffffff;
+}
+
+.section-title2 {
+  max-width: 100%;
+  /* flex: 0 0 100%; */
+  margin-left: 50%;
+  margin-right: -50%;
+  margin-bottom: 40px;
+  padding-top: 25px;
+}
+
+.section-title2 h1 {
+  display: inline-block;
+  font-family: oswald;
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.section-title2 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me2 .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  height: 24em;
+}
+
+.about-me2 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me2 .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me2 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-me3 {
+  background-color: lightgray;
+  height: 40em;
+}
+
+.about-me3 .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me3 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me3 .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me3 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 35px;
+}
+
+.about-me4 {
+  background-color: white;
+  height: 40em;
+}
+
+.about-me4 .section-title2 p.small {
+  display: block;
+  font-size: 14px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me4 .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me4 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me4 .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me4 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-me5 {
+  background-color: lightgray;
+  height: 40em;
+}
+
+.about-me5 .section-title2 p.small {
+  display: block;
+  font-size: 14px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me5 .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me5 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me5 .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me5 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Our Story Page */
+
+.story {
+  min-height: 100vh;
+  background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.story .container {
+  /* background: rgba(0, 0, 0, 0.5); */
+  width: 100%;
+}
+
+.story .full-screen {
+  min-height: 100vh;
+}
+
+.story .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.story .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 0px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.story .home-content .block h1 {
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12em;
+  letter-spacing: 6px;
+  font-weight: 100;
+  padding-top: 18px;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
+  text-shadow: 2px 1px black;
+}
+
+.about-me2 .about-content .imgBuilding {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me2 .about-content .imgBuilding img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+  height: 16em;
+}
+
+/* Location Page */
+
+.location {
+  min-height: 35em;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/_xrAvUdF9XuPHMrhziq3kjXFuXI=/425x105:1891x1205/1200x675/filters:focal(425x105:1891x1205)/cdn.vox-cdn.com/uploads/chorus_image/image/48926127/2015-11-18-otium-012.0.0.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.location .full-screen {
+  min-height: 35em;
+}
+
+.location .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.location .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.location .home-content .block h1 {
+  /* font-family: brush script mt; */
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9em;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+.locations {
+  height: auto;
+  padding: 80px 55px;
+  background-color: white;
+}
+
+.locations .section-title {
+  text-align: center;
+  position: relative;
+  padding: 25px;
+}
+
+
+.about-content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  width:100%;
+  height:100%;
+  text-align: center;
+}
+
+
+
+/* Responsive  */
+
+@media (max-width: 991px) {
+  .home .home-content .block h1 {
+    font-size: 60px;
+  }
+  .home .home-content .block p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .home-content .block h1 {
+    font-size: 40px;
+  }
+  .home .home-content .block h3 {
+    font-size: 25px;
+  }
+  header {
+    padding: 20px;
+    position: fixed;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  header ul.toggle {
+    left:0;
+  }
+
+  .ham-burger .fa {
+    display: inline-block;
+    padding-right: 25px;
+    padding-top: 9px;
+  }
+
+  header .brand-name a img {
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0px;
+    top: 80px;
+    padding: 15px;
+    border-top: 1px solid #eeeeee;
+    display: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .navbar.show {
+    display: block;
+  }
+  header .navbar ul li {
+    display: block;
+    margin-left: 0;
+  }
+  header .navbar ul li a {
+    line-height: 42px;
+    color: #000000;
+  }
+  header .navbar ul li a::before {
+    background-color: #febd01;
+  }
+  .dropdown {
+    color: black;
+    background-color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-family: oswald;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    padding-bottom: 50px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    padding: 10px 15px;
+    /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.7); */
+    z-index: 1;
+    outline: none;
+  }
+
+  .dropdown-content .fixed {
+    opacity: 0.9;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 0 0;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 3.6em;
+    padding-left: 85px;
+  }
+
+  .dropTeam {
+    border-bottom: 0px solid black;
+    margin-top: 0px;
+  }
+
+  .dropdown:hover {
+    background-color: white;
+    color: red;
+    cursor: pointer;
+  }
+
+  .dropdown-content a:hover {
+    color: black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .fa {
+    padding-left: 12px;
+  }
+
+  .home .home-content .block .cv-btn a {
+    border-radius: 0px;
+    color: white;
+    background-color: red;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 21em;
+    text-transform: uppercase;
+    font-weight: 450;
+    transition: all 0.5s ease;
+  }
+
+  .home .home-content .block .cv-btn a:hover {
+    background-color: darkred;
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    transition: all 0.5s ease;
+  }
+
+  .section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-title h1 {
+  display: inline-block;
+  font-size: 35px;
+  font-family: oswald;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.section-title h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: #febd01;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+  
+  .about-me .section-title p.small {
+  display: block;
+  font-size: 15px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me .about-content {
+  color: red;
+  text-align: center;
+  font-size: 50px;
+}
+
+.about-me .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me .about-content .img img {
+  width: 100%;
+  display: block;
+}
+
+.about-me .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+.about-me .about-content .text h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  color: #000000;
+}
+
+.about-me .about-content .text h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.about-me .about-content .text h6 span {
+  color: #febd01;
+}
+
+.about-me .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0 0 12px;
+}
+
+.about-me .about-content .text .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-me .about-content .text .info .list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.about-me .about-content .text .info .list label {
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.pledge {
+  font-weight: 450;
+  font-size: 14px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about .home-content .block h1 {
+  font-family: Anodyne;
+  text-transform: uppercase;
+  color: black;
+  font-size: 4em;
+  font-weight: 300;
+  padding-top: 50px;
+}
+
+.about-me2 {
+  padding: 100px 35px;
+  background-color: #ffffff;
+}
+
+.section-title2 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 25px;
+  margin-right: 80px;
+}
+
+.section-title2 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  
+}
+
+.section-title2 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me2 .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 35em;
+}
+
+.about-me2 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me2 .about-content .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0px;
+}
+
+.about-me2 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.about-me3 {
+  padding: 100px 35px;
+  background-color: lightgrey;
+  height: 75em;
+}
+
+.section-title3 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 25px;
+  margin-right: 80px;
+}
+
+.section-title3 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  
+}
+
+.section-title3 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me3 .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about-me3 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me3 .about-content .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-top: 25px;
+}
+
+.about-me3 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+  
+}
+
+.about-me4 {
+  padding: 100px 35px;
+  background-color: #ffffff;
+  height: 85em;
+}
+
+.section-title4 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 25px;
+  margin-right: 80px;
+}
+
+.section-title4 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  
+}
+
+.section-title4 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me4 .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 38em;
+}
+
+.about-me4 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me4 .about-content .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-top: 40px;
+}
+
+.about-me4 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-me5 {
+  padding: 100px 35px;
+  background-color: lightgray;
+  height: 80em;
+}
+
+.section-title5 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 25px;
+  margin-right: 80px;
+}
+
+.section-title5 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  
+}
+
+.section-title5 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me5 .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 35em;
+}
+
+.about-me5 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me5 .about-content .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-top: 45px;
+}
+
+.about-me5 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+}
+
+@media (max-width: 500px) {
+  .home .home-content .block h1 {
+    font-size: 40px;
+  }
+  .home .home-content .block h3 {
+    font-size: 25px;
+  }
+  header {
+    padding: 20px;
+    position: fixed;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  header ul.toggle {
+    left:0;
+  }
+
+  .ham-burger .fa {
+    display: inline-block;
+    padding-right: 25px;
+    padding-top: 9px;
+  }
+
+  header .brand-name a img {
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0px;
+    top: 80px;
+    padding: 15px;
+    border-top: 1px solid #eeeeee;
+    display: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .navbar.show {
+    display: block;
+  }
+  header .navbar ul li {
+    display: block;
+    margin-left: 0;
+  }
+  header .navbar ul li a {
+    line-height: 42px;
+    color: #000000;
+  }
+  header .navbar ul li a::before {
+    background-color: #febd01;
+  }
+  .dropdown {
+    color: black;
+    background-color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-family: oswald;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    padding-bottom: 50px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    padding: 10px 15px;
+    /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.7); */
+    z-index: 1;
+    outline: none;
+  }
+
+  .dropdown-content .fixed {
+    opacity: 0.9;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 0 0;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 3.6em;
+    padding-left: 85px;
+  }
+
+  .dropTeam {
+    border-bottom: 0px solid black;
+    margin-top: 0px;
+  }
+
+  .dropdown:hover {
+    background-color: white;
+    color: red;
+    cursor: pointer;
+  }
+
+  .dropdown-content a:hover {
+    color: black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .fa {
+    padding-left: 12px;
+  }
+
+  .home {
+  min-height: auto;
+  background-image: url("https://cdn.modpizza.com/wp-content/uploads/2020/03/MOD_Messaging_Website_v4.jpg");
+  background-size: 64em 42em;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.home .home-content .block p {
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+  letter-spacing: 5px;
+}
+
+  .home .home-content .block .cv-btn a {
+    border-radius: 0px;
+    color: white;
+    background-color: red;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 450;
+    transition: all 0.5s ease;
+  }
+
+  .home .home-content .block .cv-btn a:hover {
+    background-color: darkred;
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    transition: all 0.5s ease;
+  }
+
+  .section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-title h1 {
+  display: inline-block;
+  font-size: 35px;
+  font-family: oswald;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.section-title h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: #febd01;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.about-me {
+  height: auto;
+}
+  
+  .about-me .section-title p.small {
+  display: block;
+  font-size: 15px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me .about-content {
+  color: red;
+  text-align: center;
+  font-size: 50px;
+}
+
+.pledge {
+  font-weight: 450;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/* Meet the Team Page */
+
+.about {
+  min-height: auto;
+  background-image: url("https://subwallpaper.com/Widescreen-Wallpapers/pizza-wallpaper-phone-For-Widescreen-Wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.about .full-screen {
+  min-height: 80vh;
+}
+
+.about .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.about .home-content .block h1 {
+  font-family: Anodyne;
+  text-transform: uppercase;
+  color: black;
+  font-size: 3em;
+  font-weight: 300;
+  padding-top: 90px;
+}
+
+.about-me2 {
+  padding: 100px 35px;
+  background-color: #ffffff;
+  height: auto;
+}
+
+.section-title2 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 25px;
+  margin-right: 80px;
+}
+
+.section-title2 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+.section-title2 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me2 .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-me2 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me2 .about-content .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0px;
+}
+
+.about-me2 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.about-me3 {
+  padding: 100px 35px;
+  background-color: lightgrey;
+  height: auto;
+}
+
+.section-title3 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 25px;
+  margin-right: 80px;
+}
+
+.section-title3 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  
+}
+
+.section-title3 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me3 .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-me3 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me3 .about-content .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-top: 25px;
+}
+
+.about-me3 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+  
+}
+
+.about-me4 {
+  padding: 100px 35px;
+  background-color: #ffffff;
+  height: auto;
+}
+
+.section-title4 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 25px;
+  margin-right: 80px;
+}
+
+.section-title4 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  
+}
+
+.section-title4 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me4 .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: auto; 
+}
+
+.about-me4 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me4 .about-content .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-top: 40px;
+}
+
+.about-me4 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-me5 {
+  padding: 100px 35px;
+  background-color: lightgray;
+  height: auto;
+}
+
+.section-title5 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 25px;
+  margin-right: 80px;
+}
+
+.section-title5 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: oswald;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  
+}
+
+.section-title5 h1:before {
+  content: "";
+  left: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0px;
+  right: 1%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.about-me5 .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-me5 .about-content .img img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+.about-me5 .about-content .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-top: 45px;
+}
+
+.about-me5 .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  margin: 0 0 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Our Story Page */
+
+.story {
+  min-height: 100vh;
+  background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
+  background-size: 80em 60em;
+  background-position: left;
+  padding-top: 15px;
+}
+
+.story .container {
+  width: 100%;
+}
+
+.story .full-screen {
+  min-height: 100vh;
+}
+
+.story .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.story .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 0px;
+  width: 50%;
+  text-align: center;
+  height: 7rem;
+}
+
+.story .home-content .block h1 {
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4em;
+  letter-spacing: 4px;
+  font-weight: 100;
+  padding-top: 18px;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
+  text-shadow: 2px 1px black;
+}
+
+.about-me2 .about-content .imgBuilding {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about-me2 .about-content .imgBuilding img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 30% 0px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+  height: auto;
+}
+
+/* Location Page */
+
+.location {
+  min-height: 35em;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/_xrAvUdF9XuPHMrhziq3kjXFuXI=/425x105:1891x1205/1200x675/filters:focal(425x105:1891x1205)/cdn.vox-cdn.com/uploads/chorus_image/image/48926127/2015-11-18-otium-012.0.0.jpg");
+  background-size: 80em 100em;
+  background-position: center;
+  padding-top: 15px;
+}
+
+.location .full-screen {
+  min-height: 35em;
+}
+
+.location .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.location .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.location .home-content .block h1 {
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: 300;
+  padding-top: 80px;
+}
+
+.locations {
+  height: auto;
+  padding: 25px 35px;
+  background-color: white;
+}
+
+.locations .section-title {
+  text-align: center;
+  position: relative;
+  padding: 15px;
+}
+
+
+.about-content-location {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  width:100%;
+  height:100%;
+  text-align: center;
+}
+
+/* Order Page */
+
+.home2 {
+  min-height: 100vh;
+  background-image: url("https://cdn9.dissolve.com/p/D2115_189_697/D2115_189_697_1200.jpg");
+  background-size: 100em 100em;
+  background-position: center top;
+  padding-top: 15px;
+}
+
+.home2 .full-screen {
+  min-height: 100vh;
+}
+
+.home2 .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home2 .home-content .block {
+  flex: 0 0 100%;
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  height: 15rem;
+}
+
+.home2 .home-content .block h1 {
+  /* font-family: brush script mt; */
+  font-family: Anodyne;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9em;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+/* Footer */
+
+footer .logo {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+}
