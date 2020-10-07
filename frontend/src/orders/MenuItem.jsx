@@ -31,7 +31,7 @@ const MenuItem = (item) => {
           </button>
         </div>
       </div>
-      {withImage && <img src={img} />}
+      {withImage && <img src={img} alt="" />}
     </div>
   );
 };

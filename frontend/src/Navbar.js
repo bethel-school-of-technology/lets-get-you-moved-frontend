@@ -17,7 +17,7 @@ export default class Navbar extends Component {
             <div className="row">
               <div className="brand-name">
                 <Link to="/" className="logo">
-                  <img src={logo3} />
+                  <img src={logo3} alt='' />
                 </Link>
               </div>
               <div className="ham-burger">

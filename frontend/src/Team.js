@@ -29,7 +29,10 @@ function About() {
             <div className="about-content">
               <div className="row">
                 <div className="img">
-                  <img src="https://ca.slack-edge.com/T9P33872P-UT3PHC3L2-43d458905ce0-512" />
+                  <img
+                    src="https://ca.slack-edge.com/T9P33872P-UT3PHC3L2-43d458905ce0-512"
+                    alt=""
+                  />
                 </div>
                 <div className="text">
                   <p>
@@ -62,7 +65,7 @@ function About() {
             <div className="about-content">
               <div className="row">
                 <div className="img">
-                  <img src={Derik} />
+                  <img src={Derik} alt="" />
                 </div>
                 <div className="text">
                   <p>
@@ -96,7 +99,7 @@ function About() {
             <div className="about-content">
               <div className="row">
                 <div className="img">
-                  <img src={Zach} />
+                  <img src={Zach} alt="" />
                 </div>
                 <div className="text">
                   <p>
@@ -130,7 +133,7 @@ function About() {
             <div className="about-content">
               <div className="row">
                 <div className="img">
-                  <img src={Brendan} />
+                  <img src={Brendan} alt="" />
                 </div>
                 <div className="text">
                   <p>

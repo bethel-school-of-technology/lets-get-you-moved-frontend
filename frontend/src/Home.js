@@ -51,7 +51,7 @@ const login = () => {
               Here at Mario's, we use fresh, never frozen ingredients from local
               farmers that will be sure to satisfy your taste buds. Our pledge
               to you is to satisfy your hunger needs with the best pizza in the
-              nation. Voted #1 in the great state of Texas for 5 straight years
+              nation. Voted #1 in the nation for 3 straight years
               for best pizza, we value customer satisfaction and promise to
               provide the best pizza eating experince of your life.{" "}
             </h4>

@@ -27,11 +27,11 @@ function Location() {
             <iframe
               className="iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d444216.26967291266!2d-95.0288188!3d29.56181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24da915783aa0ee1!2sMario&#39;s%20Pizza%20%26%20Pasta!5e0!3m2!1sen!2sus!4v1598993651078!5m2!1sen!2sus"
-              frameborder="0"
+              frameBorder="0"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullscreen=""
               aria-hidden="false"
-              tabindex="0"
+              tabIndex="0"
             ></iframe>
           </div>
         </div>

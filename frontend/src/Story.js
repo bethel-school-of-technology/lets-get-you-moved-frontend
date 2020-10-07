@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import building from "./images/building.jpg";
 import story from "./images/story.jpg";
 
 function Story() {
