@@ -49,8 +49,11 @@ app.get('/', (req, res) => {
 // User routes
 app.use('/user', require('./routes/user'));
 
+
 // Order routes
 app.use('/order', require('./routes/order'));
+
+const PORT = process.env.PORT || 4000;
 
 app.listen(process.env.PORT, () =>
   console.log('Port ' + process.env.PORT + ' is running...')

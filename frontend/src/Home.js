@@ -20,7 +20,11 @@ const login = () => {
           <div className="row full-screen">
             <div className="home-content">
               <div className="block">
-                <h1>Welcome to Mario's Pizza</h1>
+                <div className="dark fire">
+                  <h1 className="Blazing">
+                    WELCOME TO MARIO'S PIZZA
+                  </h1>
+                </div>
                 <p>REAL ITALIAN PIZZA WITH REAL INGREDIENTS</p>
                 <div className="cv-btn">
                   <Link to={!user && "/login"} className="banner_link">
@@ -30,7 +34,9 @@ const login = () => {
                       </span>
                       <br></br>
                       <span className="signIn_signOut">
-                        {user ? "Click to Sign Out" : "Sign In To Build Your Pizza"}
+                        {user
+                          ? "Click to Sign Out"
+                          : "Sign In To Build Your Pizza"}
                       </span>
                     </div>
                   </Link>
@@ -51,9 +57,9 @@ const login = () => {
               Here at Mario's, we use fresh, never frozen ingredients from local
               farmers that will be sure to satisfy your taste buds. Our pledge
               to you is to satisfy your hunger needs with the best pizza in the
-              nation. Voted #1 in the nation for 3 straight years
-              for best pizza, we value customer satisfaction and promise to
-              provide the best pizza eating experince of your life.{" "}
+              nation. Voted #1 in the nation for 3 straight years for best
+              pizza, we value customer satisfaction and promise to provide the
+              best pizza eating experince of your life.{" "}
             </h4>
           </div>
           <div className="about-content">

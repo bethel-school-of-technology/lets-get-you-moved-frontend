@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400");
-@import url("//db.onlinewebfonts.com/c/07e4f97163ee64e2286786298ed14ea7?family=Anodyne");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Akronim);
+@import url(//db.onlinewebfonts.com/c/eb2024b0aa1018c18619b4afa2faffcd?family=AnodyneW01-Regular);
 
 .shop-item img {
   display: none;
@@ -360,7 +361,7 @@ header .navbar ul li .orderNow:hover {
   text-decoration: none;
   color: white;
   /* text-shadow: 1px 1px red; */
-   font-size: 15px;
+  font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
   display: flex;
@@ -368,14 +369,86 @@ header .navbar ul li .orderNow:hover {
 }
 
 .home .home-content .block h1 {
-  font-family: Anodyne;
+  /* font-family: oswald;
   color: white;
   text-transform: uppercase;
-  font-size: 6em;
-  font-weight: 100;
-  padding-top: 15px;
+  font-size: 5.5em;
+  font-weight: 700;
+   text-shadow: 2px 2px black; */
+
+  /* font-size: 60px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						8px 8px red,
+						20px 20px #000000;
+  padding-top: 15px; */
 }
 
+/* .fire {
+  margin: 10px auto;
+  width: 80%;
+  max-width: 1000px;
+  height: 200px;
+  background-position: center center;
+  background-size: 1000px 200px;
+  border-radius: 10px;
+  font-family: "Akronim";
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+.fire:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+} */
+
+.Blazing {
+  display: inline-block;
+  font-family: oswald;
+  font-weight: 700;
+  color: white;
+  font-size: 86px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  line-height: 50px;
+  min-width: 50px;
+  outline: none;
+  vertical-align: middle;
+
+  text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange,
+    4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
+  animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+  0% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+  }
+  25% {
+    text-shadow: 0 3px 20px red, 0 0 30px red, 0 0 20px orange, 0 0 5px yellow,
+      -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow;
+  }
+  50% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+      -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5);
+  }
+  75% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+      3px -5px 5px yellow, -4px -10px 10px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5), 0px -25px 40px rgba(255, 255, 0, 0);
+  }
+  100% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+  }
+}
 .home .home-content .block P {
   color: white;
   font-size: 20px;
@@ -677,11 +750,12 @@ footer .copyright {
 }
 
 .build_page .home-content .block h1 {
-  font-family: Anodyne;
+  font-family: oswald;
   color: white;
   text-transform: uppercase;
   font-size: 9em;
-  font-weight: 300;
+  text-shadow: 2px 2px black;
+  font-weight: 700;
   padding-top: 30px;
 }
 
@@ -730,12 +804,12 @@ footer .copyright {
 }
 
 .about .home-content .block h1 {
-  font-family: Anodyne;
+  font-family: oswald;
   color: black;
   text-shadow: 2px 1px white;
   text-transform: uppercase;
   font-size: 9em;
-  font-weight: 300;
+  font-weight: 700;
   padding-top: 30px;
 }
 
@@ -973,12 +1047,12 @@ footer .copyright {
 }
 
 .story .home-content .block h1 {
-  font-family: Anodyne;
+  font-family: oswald;
   color: white;
   text-transform: uppercase;
-  font-size: 12em;
+  font-size: 11em;
   letter-spacing: 6px;
-  font-weight: 100;
+  font-weight: 700;
   padding-top: 10px;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
   text-shadow: 2px 1px black;
@@ -1033,12 +1107,12 @@ footer .copyright {
 }
 
 .location .home-content .block h1 {
-  font-family: Anodyne;
+  font-family: oswald;
   color: white;
   text-transform: uppercase;
-  font-size: 9em;
-  font-weight: 300;
-  padding-top: 60px;
+  font-size: 10em;
+  font-weight: 700;
+  text-shadow: 2px 2px black;
 }
 
 .locations {
@@ -1118,10 +1192,6 @@ footer .copyright {
 }
 
 .signIn_input > input {
-  /* height: 30px;
-  margin-bottom: 10px;
-  background-color: white;
-  width: 98%; */
   border: none;
   background-color: transparent;
   outline-width: 0;
@@ -1155,13 +1225,15 @@ footer .copyright {
 }
 
 .login_logo {
-  font-family: Anodyne;
+  font-family: oswald;
+  font-weight: 700;
   font-size: 60px;
   color: red;
   text-shadow: 1px 1px black;
   object-fit: contain;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 /* Receipt */
@@ -1229,9 +1301,6 @@ footer .copyright {
   margin-bottom: 15px;
 }
 
-.payment_details, button {
- 
-}
 
 /* Responsive  */
 
@@ -1469,12 +1538,12 @@ footer .copyright {
   }
 
   .story .home-content .block h1 {
-    font-family: Anodyne;
+    font-family: oswald;
     color: white;
     text-transform: uppercase;
     font-size: 10em;
     letter-spacing: 6px;
-    font-weight: 100;
+    font-weight: 700;
     padding-top: 10px;
     box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
     text-shadow: 2px 1px black;
@@ -1488,6 +1557,16 @@ footer .copyright {
   .home .home-content .block p {
     font-size: 15px;
   }
+
+  .about .home-content .block h1 {
+  font-family: oswald;
+  color: black;
+  text-shadow: 2px 1px white;
+  text-transform: uppercase;
+  font-size: 6em;
+  font-weight: 700;
+  padding-top: 30px;
+}
 
   .story {
     min-height: auto;
@@ -1522,12 +1601,12 @@ footer .copyright {
   }
 
   .story .home-content .block h1 {
-    font-family: Anodyne;
+    font-family: oswald;
     color: white;
     text-transform: uppercase;
     font-size: 6em;
     letter-spacing: 4px;
-    font-weight: 100;
+    font-weight: 700;
     padding-top: 18px;
     box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
     text-shadow: 2px 1px black;
@@ -1905,12 +1984,12 @@ footer .copyright {
   }
 
   .story .home-content .block h1 {
-    font-family: Anodyne;
+    font-family: oswald;
     color: white;
     text-transform: uppercase;
     font-size: 6em;
     letter-spacing: 4px;
-    font-weight: 100;
+    font-weight: 700;
     padding-top: 18px;
     box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
     text-shadow: 2px 1px black;
@@ -2463,12 +2542,12 @@ footer .copyright {
   }
 
   .about .home-content .block h1 {
-    font-family: Anodyne;
+    font-family: oswald;
     text-transform: uppercase;
     color: black;
-    font-size: 4.5em;
-    font-weight: 400;
-    padding-top: 40px;
+    font-size: 3.5em;
+    font-weight: 700;
+    padding-top: 70px;
   }
 
   .about-me2 {
@@ -2789,14 +2868,15 @@ footer .copyright {
   }
 
   .story .home-content .block h1 {
-    font-family: Anodyne;
+    font-family: oswald;
     color: white;
     text-transform: uppercase;
     font-size: 4em;
     letter-spacing: 4px;
-    font-weight: 100;
+    font-weight: 700;
     box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
     text-shadow: 2px 1px black;
+    margin-top: 20px;
   }
 
   .about-me2 .about-content .imgBuilding {
@@ -2843,12 +2923,11 @@ footer .copyright {
   }
 
   .location .home-content .block h1 {
-    font-family: Anodyne;
+    font-family: oswald;
     color: white;
     text-transform: uppercase;
     font-size: 5em;
-    font-weight: 300;
-    padding-top: 5px;
+    font-weight: 700;
   }
 
   .locations {
@@ -2911,11 +2990,11 @@ footer .copyright {
 
   .home2 .home-content .block h1 {
     /* font-family: brush script mt; */
-    font-family: Anodyne;
+    font-family: oswald;
     color: white;
     text-transform: uppercase;
     font-size: 4em;
-    font-weight: 300;
+    font-weight: 700;
     padding-top: 30px;
     position: relative;
     display: inline-block;
@@ -2929,13 +3008,14 @@ footer .copyright {
   }
 
   .login_logo {
-    font-family: Anodyne;
-    font-size: 25px;
+    font-family: oswald;
+    font-size: 23px;
     color: red;
     text-shadow: 1px 1px black;
     object-fit: contain;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   /* Build Page */
@@ -2972,11 +3052,11 @@ footer .copyright {
   }
 
   .build_page .home-content .block h1 {
-    font-family: Anodyne;
+    font-family: oswald;
     color: white;
     text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 300;
+    font-size: 3em;
+    font-weight: 700;
     padding-top: 0px;
   }
 
