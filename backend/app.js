@@ -5,6 +5,7 @@ const User = require('./models/User');
 const Order = require('./models/Order');
 const OrderItem = require('./models/OrderItem');
 require('dotenv').config();
+const path = require('path');
 
 // Applying middleware
 
@@ -55,8 +56,8 @@ app.use('/order', require('./routes/order'));
 
 const PORT = process.env.PORT || 4000;
 
-app.listen(process.env.PORT, () =>
-  console.log('Port ' + process.env.PORT + ' is running...')
+app.listen(PORT, () =>
+  console.log('Port ' + PORT + ' is running...')
 );
 
 // module.exports = app;

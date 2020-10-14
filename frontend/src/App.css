@@ -241,12 +241,12 @@ header.fixed .navbar ul li .orderNow {
 
 header.fixed .navbar ul li .orderNow:hover {
   color: black;
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
 }
 
 header .navbar ul li a:hover {
   color: red;
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
 }
 
 header .navbar ul li .orderNow:hover {
@@ -747,6 +747,11 @@ footer .copyright {
   width: 50%;
   text-align: center;
   height: 35rem;
+}
+
+.build_p {
+  color: gray;
+  font-weight: 400;
 }
 
 .build_page .home-content .block h1 {
@@ -1903,11 +1908,11 @@ footer .copyright {
   }
 
   .about .home-content .block h1 {
-    font-family: Anodyne;
+    font-family: oswald;
     text-transform: uppercase;
     color: black;
-    font-size: 6em;
-    font-weight: 300;
+    font-size: 7em;
+    font-weight: 700;
     padding-top: 50px;
   }
 
@@ -2283,6 +2288,15 @@ footer .copyright {
     font-size: 35px;
     padding-bottom: 10px;
   }
+
+  .location .home-content .block h1 {
+  font-family: oswald;
+  color: white;
+  text-transform: uppercase;
+  font-size: 7em;
+  font-weight: 700;
+  text-shadow: 2px 2px black;
+}
 }
 
 @media (max-width: 500px) {
@@ -2435,16 +2449,58 @@ footer .copyright {
     letter-spacing: 5px;
   }
 
+  .Blazing {
+  display: inline-block;
+  font-family: oswald;
+  font-weight: 700;
+  color: white;
+  font-size: 3em;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  line-height: 50px;
+  min-width: 50px;
+  outline: none;
+  vertical-align: middle;
+  text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange,
+    4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
+  animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+  0% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+  }
+  25% {
+    text-shadow: 0 3px 20px red, 0 0 30px red, 0 0 20px orange, 0 0 5px yellow,
+      -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow;
+  }
+  50% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+      -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5);
+  }
+  75% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+      3px -5px 5px yellow, -4px -10px 10px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5), 0px -25px 40px rgba(255, 255, 0, 0);
+  }
+  100% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+  }
+}
+
   .home .home-content .block .cv-btn a {
     border-radius: 0px;
     color: white;
     background-color: red;
-    padding: 12px 25px;
+    padding: 5px 25px;
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
     width: auto;
-    border-radius: 10px;
+    border-radius: 0px;
     text-transform: uppercase;
     font-weight: 450;
     transition: all 0.5s ease;
@@ -2453,7 +2509,7 @@ footer .copyright {
   .home .home-content .block .cv-btn a:hover {
     background-color: darkred;
     color: white;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 450;
     transition: all 0.5s ease;
   }
@@ -3064,6 +3120,11 @@ footer .copyright {
     font-size: 25px;
     padding-bottom: 10px;
   }
+
+  .build_p {
+  color: gray;
+  font-size: 10px;
+}
 
   /* Receipt */
 

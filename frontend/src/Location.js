@@ -20,7 +20,6 @@ function Location() {
           <div className="row">
             <div className="section-title">
               <h1>Locate</h1>
-              {/* <p class="small text-uppercase">Our Pledge</p> */}
             </div>
           </div>
           <div className="about-content-location">

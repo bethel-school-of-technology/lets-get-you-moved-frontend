@@ -5,18 +5,16 @@ import { auth } from './firebase';
 
 function Login() {
   const history = useHistory();
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const login = event => {
     // this stops the refresh
     event.preventDefault();
-    // do the login logic...
     auth
       .signInWithEmailAndPassword(email, password)
       .then(auth => {
-        // logged in, redirect to homepage
+        // logged in, redirect to build your pizza page
         history.push('/order');
       })
       .catch(e => alert(e.message));
@@ -25,7 +23,6 @@ function Login() {
   const register = event => {
     // this stops the refresh
     event.preventDefault();
-    // do the register logic...
     auth
       .createUserWithEmailAndPassword(email, password)
       .then(auth => {
@@ -50,13 +47,7 @@ function Login() {
 
   return (
     <div className='login'>
-      {/* <img
-          className="login_logo"
-          src={logo3}
-          alt=""
-        /> */}
       <h1 className='login_logo'>Sign In To Build Your Pizza Today</h1>
-
       <div className='login_container'>
         <h1>Sign in</h1>
         <form>

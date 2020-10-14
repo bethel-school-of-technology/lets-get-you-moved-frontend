@@ -1,3 +1,5 @@
+// Zach Wilson
+
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 

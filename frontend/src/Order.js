@@ -34,16 +34,19 @@ const Order = () => {
     .toFixed(2);
 
   const handlePurchase = async () => {
-    const response = await fetch("http://localhost:4000/order/create", {
-      method: "POST",
-      body: JSON.stringify({
-        items: cartItems,
-        firebaseClientId: user.uid,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      "http://localhost:4000/order/create",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          items: cartItems,
+          firebaseClientId: user.uid,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const { success, data } = await response.json();
 
@@ -72,6 +75,10 @@ const Order = () => {
           <div className="row">
             <div className="section-title">
               <h1>HEY, {user?.email}! LET'S BUILD YOUR PIZZA!</h1>
+              <p className='build_p'>
+                ALL PIZZA WILL BE SERVED WITH OUR PATENTED ORGANIC
+                RED SAUCE
+              </p>
               <div className="shop-item">
                 {menuData.map((menuItems, i) => (
                   <MenuList
